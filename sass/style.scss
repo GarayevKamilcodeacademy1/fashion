@@ -1,0 +1,396 @@
+@import '_variables.scss';
+
+body{
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+}
+// [class^='col-']{
+// 	border: 1px solid black;
+// }
+
+header{
+	.container-fluid{
+		.row3{
+			border:1px solid lightgray;
+			a{
+				font-weight: 500;
+				font-size: 14px;
+				text-decoration: none;
+				color: black;
+				&:hover{
+					color: $maincolor;
+				}
+			}
+		}
+		.row{
+			img{
+				width: 200px;
+				height: 95px;
+			}
+			.col-4{
+
+				font-weight: 500;
+				font-size: 15px;
+			}
+			background: $bgcolor;
+			color: $color;
+
+			.icons{
+				letter-spacing: 5px;
+			}
+			a{
+				color: $color;
+				text-decoration: none;
+				&:hover{
+					color: $maincolor;
+				}
+			}
+		}
+	}
+}
+
+
+#slider{
+	.container-fluid{
+		.row{
+			#circle{
+				text-decoration: none;
+				color: $color;
+				&:hover{
+					color: $maincolor;
+				}
+			}
+			.col-6{
+				transition:all 0.8s ease;
+				position: relative;
+				.headings{
+					p,h1{
+						&:hover{
+							color: $maincolor;
+						}
+					}
+					color: white;
+					position: absolute;
+					bottom:10%;
+				}
+				img{
+					width: 100%;}
+			}
+			.col-3{
+
+					&:hover{
+						.box, .box2{opacity: 1;
+							transition: 0.5s ease;}
+					}
+				.box{opacity: 0;
+					&:hover{transition: 0.5s ease;
+						background-color: $maincolor;
+					}
+					color: white;
+					text-align: center;
+					width: 40px;
+					height: 40px;
+					font-size: 35px;
+					border-radius: 100%;
+					background: $color;
+					position: absolute;
+					left: 15px;
+					top: 47%;
+					
+				}
+				.box2{opacity: 0;
+					&:hover{transition: 0.5s ease;
+						background-color: $maincolor;
+					}
+					color: white;
+					text-align: center;
+					width: 40px;
+					height: 40px;
+					font-size: 35px;
+					border-radius: 100%;
+					background: $color;
+					position: absolute;
+					right: 15px;
+					top: 47%;
+					
+				}
+				overflow: hidden;
+				position: relative;
+				img{left: -50%;
+					position: absolute;
+					height:550px;
+				}
+			}
+		}
+	}
+	background: $bgcolor;
+}
+
+
+#under-slider{
+	.container{
+		.row{
+			.col-4{
+				button{
+					top: 110px;
+					left: 105px;
+						position: absolute;
+						border:none;
+						background: white;
+						height: 50px;
+						width: 150px;
+						&:hover{
+							color: white;
+							background: $maincolor;
+						}
+					}
+				position: relative;
+				.border{
+					opacity: 0.3;
+					background: black;
+					position: absolute;
+					top: 30px;
+					left: 37px;
+					height: 210px;
+					width: 300px;
+					border:1.5px solid white!important;
+				}
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+background: $bgcolor;
+}
+
+
+#main{
+	.row{
+		.under{
+			text-align: center;
+			button{
+				&:first-child{
+					color: white;
+					background: $maincolor;
+				}
+				border:none;
+				background: $bgcolor;
+				color: $color;
+			}
+			background: white;
+		}
+		.col-4{
+			.instagram{
+				text-align: center;
+				a{
+					letter-spacing: 1.5px;
+					color: black;
+					&:hover{
+						color: $maincolor;
+					}
+
+				}
+				.row{
+					.col-4{
+						img{
+							width: 100%;
+						}
+					}
+				}
+				background: white;
+				h1{
+					text-align: center;
+					font-size: 15px;
+					font-weight: bold;
+					padding-top: 20px;
+				}
+			}
+			.categories{
+				span{
+					font-size: 14px;
+					color:gray;
+				}
+				a{
+					padding-left: 10px;
+					text-decoration: none;
+					color: black;
+					&:hover{
+						color: $maincolor;
+					}
+				}
+				h1{
+					text-align: center;
+					font-size: 15px;
+					font-weight: bold;
+					padding-top: 20px;
+				}
+				background: white;
+			}
+			.popular{
+			
+				.col-12{
+					.col-7{
+						p{	
+							&:hover{color: $maincolor}
+							font-size: 15px;
+						}
+						a{	
+							&:hover{color: $maincolor}
+							font-weight: 500; 
+							text-decoration: none;
+							color: black;
+						}
+					}
+					.col-4{
+						img{width: 100%;
+							height: 100%;}
+					}
+				}
+				background: white;
+				h1{
+					font-weight: bold;
+					padding-top: 20px;
+					font-size: 15px;
+				}
+			}
+			.subcribe{
+				input{width: 300px;}
+				button{
+					font-size: 17px;
+					font-weight: 500;
+					border:none;
+					background:#434343;
+					color: white;
+					&:hover{
+						background-color: $maincolor;
+					}
+				}
+				p{
+					color: gray;
+					font-size: 14px;
+				}
+				text-align: center;
+				h1{
+					font-weight: bold;
+					padding-top: 20px;
+					font-size: 15px;
+				}
+				background: white;
+			}
+			.img{
+				img{
+					width: 100%;
+				}
+			}
+				.stay{
+					button{
+
+						&:hover{
+							background: $maincolor;
+						}
+						border:none;
+						font-size: 20px;
+						display: inline-block;
+						background: $color;
+						color: white;
+						border-radius: 100%;
+						width: 32px;
+						height: 30px;
+					}
+					h1{
+					font-weight: bold;
+					padding-top: 20px;
+					font-size: 15px;
+				}
+					text-align: center;
+					background: white;
+				}
+
+			.about-me{
+				span{
+					color: $maincolor;
+				}
+				h1{
+					font-weight: bold;
+					padding-top: 20px;
+					font-size: 15px;
+				}
+				img{
+					width: 100%;
+				}
+				background: white;
+				text-align: center;
+			}
+		}
+		.col-12{
+			.col-6{
+				.inner{
+						a{
+							text-decoration: none;
+						}
+					p{
+						margin-top: 20px;
+						margin-bottom: 20px;
+						a{
+							text-decoration: none;
+							color: gray;
+							&:hover{
+								color: black;
+							}
+						}
+					}
+					h1{
+						font-weight: 600;
+						margin-top: 15px;
+						margin-bottom: 15px;
+						font-size: 26px;
+						a{
+							text-decoration: none;
+							color: black;
+							&:hover{
+								color: $maincolor;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	background: $bgcolor;
+	.col-8{
+		.headings{
+			a{
+				text-decoration: none;
+				color: black;
+				&:hover{
+					color: $maincolor;
+				}
+			}
+			p{
+				a{
+					text-decoration: none;
+					color: $color;
+					&:hover{
+						color: black;
+					}
+				}
+			}
+			h1{
+				a{
+					text-decoration: none;
+					color: black;
+					&:hover{
+						color: $maincolor;
+					}
+				}
+			}
+
+			background: white;
+		}
+
+		img{
+			width: 100%;
+		}
+	}
+}
